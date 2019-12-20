@@ -1,0 +1,93 @@
+/* Font Smoothing */
+@font-face {
+  font-family: 'iransans';
+  src: url('/src/assets/fonts/IRANSans-Bold-web.woff') format('woff');
+  font-weight: bold;
+}
+
+body{
+  font-family: 'iransans', tahoma;
+  direction: rtl;
+  text-align: right;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+td,
+button,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.navbar,
+.brand,
+.alert {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'iransans', tahoma;
+  font-weight: $font-weight-normal;
+}
+
+.cr-app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar-brand{
+  margin-right: 0;
+  margin-left:1rem;
+}
+
+.notification-title{
+  padding: 0 0 0 5px !important;
+}
+
+.list-group{
+  padding-right: 0;
+}
+
+@media (min-width: 576px)
+{
+  .modal-dialog {
+    max-width: 70% !important;
+  }
+  .modal{
+    height: auto !important;
+  }
+}
+.sc-launcher{
+  z-index: 99;
+}
+.sc-chat-window{
+  z-index: 99;
+}
+.sc-user-input--buttons{
+  left: 10px;
+  right: auto !important;
+}
+
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:last-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
