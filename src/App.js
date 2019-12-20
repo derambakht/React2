@@ -44,6 +44,7 @@ export default class App extends Component {
             <p>Add With Developer A</p>
             <h3>Modify with Developer A</h3>
             <h3>Add after First Push in origin</h3>
+            <h5>edit in github site</h5>
           </>
         </HashRouter>
       </Provider>
